@@ -2,3 +2,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: #083B4C;
+}
+
+.ms-fs-1{
+    font-size: 6rem;
+}
