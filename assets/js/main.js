@@ -9,3 +9,40 @@
 // >
 // 1. Scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 // 2. Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
+
+let box = document.getElementById("box")
+
+for (let x = 1; x <= 100; x++) {
+
+    let divNuovo = document.createElement("div")
+    divNuovo.classList.add("box-js")
+
+
+    if (x % 3 == 0 && x % 5 == 0) {
+
+        divNuovo.innerHTML = `<h4>FizzBuzz</h4>`;
+        divNuovo.classList.add("ms-bg-red")
+
+        console.log("FizzBuzz")
+
+    } else if (x % 5 == 0) {
+
+        divNuovo.innerHTML = `<h4>Buzz</h4>`;
+        divNuovo.classList.add("ms-bg-orange")
+        console.log("Buzz")
+
+    } else if (x % 3 == 0) {
+
+        divNuovo.innerHTML = `<h4>Fizz</h4>`;
+        divNuovo.classList.add("ms-bg-green")
+        console.log("Fizz")
+    } else {
+
+        divNuovo.innerHTML = `<h4>${x}</h4>`;
+        divNuovo.classList.add("ms-bg-blue")
+        console.log(x)
+    }
+
+    box.append(divNuovo)
+
+}

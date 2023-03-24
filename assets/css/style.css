@@ -10,3 +10,34 @@ body{
 .ms-fs-1{
     font-size: 6rem;
 }
+
+#box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem 1rem;
+}
+
+.box-js{
+    width: 155px;
+    height: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ms-bg-red{
+    background-color: #F0466F;
+}
+
+.ms-bg-orange{
+    background-color: #FFD166;
+}
+
+.ms-bg-green{
+    background-color: #0CD6A1;
+}
+
+.ms-bg-blue{
+    background-color:#1389B2;
+}
